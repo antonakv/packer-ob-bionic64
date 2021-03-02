@@ -187,10 +187,22 @@ Expected command output
 
 [Skipped some messages]
 
-  System Package nginx
+  System Package thin-provisioning-tools
+     ✔  is expected to be installed
+  System Package vim
+     ✔  is expected to be installed
+  System Package git
+     ✔  is expected to be installed
+  System Package jq
+     ✔  is expected to be installed
+  System Package curl
+     ✔  is expected to be installed
+  System Package wget
+     ✔  is expected to be installed
+  System Package language-pack-en
      ✔  is expected to be installed
 
-Test Summary: 1 successful, 0 failures, 0 skipped
+Test Summary: 7 successful, 0 failures, 0 skipped
        Finished verifying <default-vbox-bionic64> (0m2.20s).
 -----> Destroying <default-vbox-bionic64>...
        ==> default: Forcing shutdown of VM...
