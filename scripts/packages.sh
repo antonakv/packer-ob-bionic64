@@ -33,7 +33,7 @@ apt-get install -y linux-generic linux-image-generic ${APTARGS}
 # basic tools
 apt-get install -y ${APTARGS} \
 	git vim curl wget jq tar unzip software-properties-common net-tools \
-	language-pack-en ctop htop sysstat unattended-upgrades
+	language-pack-en ctop htop sysstat unattended-upgrades gpg-agent
 
 # unattended-upgrades
 unattended-upgrades -v
