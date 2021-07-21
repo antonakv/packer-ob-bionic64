@@ -216,6 +216,11 @@ Test Summary: 7 successful, 0 failures, 0 skipped
 
 ## Publish vagrant box to Vagrant cloud 
 
+- Login to vagrant cloud
+```bash
+vagrant cloud auth login
+```
+
 - Create vagrant box record on the Vagrant cloud
 ```bash
 vagrant cloud box create Replace_With_your_vagrant_cloud_account_name/bionic64 --no-private
