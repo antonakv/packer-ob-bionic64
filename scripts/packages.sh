@@ -33,7 +33,7 @@ apt-get install -y linux-generic linux-image-generic ${APTARGS}
 # basic tools
 apt-get install -y ${APTARGS} \
 	git vim curl wget jq tar unzip software-properties-common net-tools \
-	language-pack-en ctop htop sysstat unattended-upgrades gpg-agent
+	language-pack-en ctop htop sysstat unattended-upgrades gpg-agent dirmngr
 
 # unattended-upgrades
 unattended-upgrades -v
@@ -45,6 +45,8 @@ apt-get install -y thin-provisioning-tools ${APTARGS}
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 apt-get update
+
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DA418C88A3219F7B
 
 # add user_subvol_rm_allowed to fstab 
 # if /var/lib is btrfs
