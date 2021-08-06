@@ -87,7 +87,7 @@
     "build_cpu_cores": "2",
     "build_memory": "2048",
     "build_name": "bionic64",
-    "disk_size": "102000",
+    "disk_size": "61000",
     "headless": "true",
     "iso_checksum": "8c5fc24894394035402f66f3824beb7234b757dd2b5531379cb310cedfdf0996",
     "iso_checksum_type": "sha256",

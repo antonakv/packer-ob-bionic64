@@ -50,7 +50,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DA418C88A3219F7B
 
 # add user_subvol_rm_allowed to fstab 
 # if /var/lib is btrfs
-sed -i -e 's/\/var\/lib.*.btrfs.*.defaults.*.0/\/var\/lib\tbtrfs\tdefaults,user_subvol_rm_allowed\t0/g' /etc/fstab
+# sed -i -e 's/\/var\/lib.*.btrfs.*.defaults.*.0/\/var\/lib\tbtrfs\tdefaults,user_subvol_rm_allowed\t0/g' /etc/fstab
 
 # prep for LXD
 cat > /etc/security/limits.d/lxd.conf <<EOF
