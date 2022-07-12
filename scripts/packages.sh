@@ -48,6 +48,10 @@ apt-get update
 
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DA418C88A3219F7B
 
+# terraform install
+
+apt-get install -y ${APTARGS} terraform
+
 # add user_subvol_rm_allowed to fstab 
 # if /var/lib is btrfs
 # sed -i -e 's/\/var\/lib.*.btrfs.*.defaults.*.0/\/var\/lib\tbtrfs\tdefaults,user_subvol_rm_allowed\t0/g' /etc/fstab
